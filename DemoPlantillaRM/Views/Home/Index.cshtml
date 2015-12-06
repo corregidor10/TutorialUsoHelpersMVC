@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DemoPlantillaRM.Models.Plantilla>
+
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+<h2>Plantilla</h2>
+<br />
+<div>
+    <br />
+    @Html.Partial("_listado", Model)
+
+
+</div>
+<br />
+<button class="btn btn-info"> @Html.ActionLink("Añadir Jugador", "Alta")</button>
+<br />

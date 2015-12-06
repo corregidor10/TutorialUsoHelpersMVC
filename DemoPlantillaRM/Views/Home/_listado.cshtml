@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DemoPlantillaRM.Models.Plantilla>
+
+
+<table class="table table-striped" style="width: 85%; text-align: center">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Demarcacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edad)
+        </th>
+       <th>
+            @Html.DisplayNameFor(model => model.Extracomunitario)
+        </th>
+      </tr>
+
+@foreach (var item in Model)
+{
+    <tr style="text-align: center">
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Demarcacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Extracomunitario)
+        </td>
+    </tr>
+}
+
+</table>
